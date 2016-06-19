@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		0D5495D11D17318B00DCD0FC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D5495D01D17318B00DCD0FC /* main.m */; };
 		0D5495D41D17318B00DCD0FC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D5495D31D17318B00DCD0FC /* AppDelegate.m */; };
-		0D5495D71D17318B00DCD0FC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D5495D61D17318B00DCD0FC /* ViewController.m */; };
 		0D5495DA1D17318B00DCD0FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D5495D81D17318B00DCD0FC /* Main.storyboard */; };
 		0D5495DD1D17318B00DCD0FC /* CloudUnlock.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0D5495DB1D17318B00DCD0FC /* CloudUnlock.xcdatamodeld */; };
 		0D5495DF1D17318B00DCD0FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D5495DE1D17318B00DCD0FC /* Assets.xcassets */; };
@@ -25,6 +24,11 @@
 		0D5496091D17327500DCD0FC /* slide-to-unlock.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D5496001D17327500DCD0FC /* slide-to-unlock.png */; };
 		0D54960A1D17327500DCD0FC /* unlocked@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D5496011D17327500DCD0FC /* unlocked@2x.png */; };
 		0D54960C1D17331400DCD0FC /* Private-Cloud.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D54960B1D17331400DCD0FC /* Private-Cloud.png */; };
+		0D5496151D17354A00DCD0FC /* HistoryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D54960E1D17354A00DCD0FC /* HistoryTableViewCell.m */; };
+		0D5496161D17354A00DCD0FC /* HistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D5496101D17354A00DCD0FC /* HistoryViewController.m */; };
+		0D5496171D17354A00DCD0FC /* PermissionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D5496121D17354A00DCD0FC /* PermissionsViewController.m */; };
+		0D5496181D17354A00DCD0FC /* UnlockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D5496141D17354A00DCD0FC /* UnlockViewController.m */; };
+		0D54961C1D17357C00DCD0FC /* CircularLock.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D54961B1D17357C00DCD0FC /* CircularLock.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,8 +46,6 @@
 		0D5495D01D17318B00DCD0FC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0D5495D21D17318B00DCD0FC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0D5495D31D17318B00DCD0FC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		0D5495D51D17318B00DCD0FC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		0D5495D61D17318B00DCD0FC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		0D5495D91D17318B00DCD0FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0D5495DC1D17318B00DCD0FC /* CloudUnlock.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CloudUnlock.xcdatamodel; sourceTree = "<group>"; };
 		0D5495DE1D17318B00DCD0FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -62,6 +64,16 @@
 		0D5496001D17327500DCD0FC /* slide-to-unlock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "slide-to-unlock.png"; path = "Resources/slide-to-unlock.png"; sourceTree = "<group>"; };
 		0D5496011D17327500DCD0FC /* unlocked@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "unlocked@2x.png"; path = "Resources/unlocked@2x.png"; sourceTree = "<group>"; };
 		0D54960B1D17331400DCD0FC /* Private-Cloud.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Private-Cloud.png"; path = "Resources/Private-Cloud.png"; sourceTree = "<group>"; };
+		0D54960D1D17354A00DCD0FC /* HistoryTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryTableViewCell.h; sourceTree = "<group>"; };
+		0D54960E1D17354A00DCD0FC /* HistoryTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoryTableViewCell.m; sourceTree = "<group>"; };
+		0D54960F1D17354A00DCD0FC /* HistoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryViewController.h; sourceTree = "<group>"; };
+		0D5496101D17354A00DCD0FC /* HistoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoryViewController.m; sourceTree = "<group>"; };
+		0D5496111D17354A00DCD0FC /* PermissionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PermissionsViewController.h; sourceTree = "<group>"; };
+		0D5496121D17354A00DCD0FC /* PermissionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PermissionsViewController.m; sourceTree = "<group>"; };
+		0D5496131D17354A00DCD0FC /* UnlockViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnlockViewController.h; sourceTree = "<group>"; };
+		0D5496141D17354A00DCD0FC /* UnlockViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnlockViewController.m; sourceTree = "<group>"; };
+		0D54961A1D17357C00DCD0FC /* CircularLock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CircularLock.h; path = Libs/CircularLock.h; sourceTree = "<group>"; };
+		0D54961B1D17357C00DCD0FC /* CircularLock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CircularLock.m; path = Libs/CircularLock.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,12 +115,17 @@
 		0D5495CE1D17318B00DCD0FC /* CloudUnlock */ = {
 			isa = PBXGroup;
 			children = (
-				0D5495D21D17318B00DCD0FC /* AppDelegate.h */,
-				0D5495D31D17318B00DCD0FC /* AppDelegate.m */,
-				0D5495D51D17318B00DCD0FC /* ViewController.h */,
-				0D5495D61D17318B00DCD0FC /* ViewController.m */,
-				0D5495D81D17318B00DCD0FC /* Main.storyboard */,
-				0D5495E01D17318B00DCD0FC /* LaunchScreen.storyboard */,
+				0D54961E1D17359B00DCD0FC /* Views */,
+				0D54961D1D17358C00DCD0FC /* Model */,
+				0D54960D1D17354A00DCD0FC /* HistoryTableViewCell.h */,
+				0D54960E1D17354A00DCD0FC /* HistoryTableViewCell.m */,
+				0D54960F1D17354A00DCD0FC /* HistoryViewController.h */,
+				0D5496101D17354A00DCD0FC /* HistoryViewController.m */,
+				0D5496111D17354A00DCD0FC /* PermissionsViewController.h */,
+				0D5496121D17354A00DCD0FC /* PermissionsViewController.m */,
+				0D5496131D17354A00DCD0FC /* UnlockViewController.h */,
+				0D5496141D17354A00DCD0FC /* UnlockViewController.m */,
+				0D5496191D17356C00DCD0FC /* Libs */,
 				0D5495F81D17322C00DCD0FC /* Resources */,
 				0D5495CF1D17318B00DCD0FC /* Supporting Files */,
 			);
@@ -118,6 +135,8 @@
 		0D5495CF1D17318B00DCD0FC /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				0D5495D21D17318B00DCD0FC /* AppDelegate.h */,
+				0D5495D31D17318B00DCD0FC /* AppDelegate.m */,
 				0D5495E31D17318B00DCD0FC /* Info.plist */,
 				0D5495DB1D17318B00DCD0FC /* CloudUnlock.xcdatamodeld */,
 				0D5495D01D17318B00DCD0FC /* main.m */,
@@ -150,6 +169,31 @@
 				0D5495DE1D17318B00DCD0FC /* Assets.xcassets */,
 			);
 			name = Resources;
+			sourceTree = "<group>";
+		};
+		0D5496191D17356C00DCD0FC /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+				0D54961A1D17357C00DCD0FC /* CircularLock.h */,
+				0D54961B1D17357C00DCD0FC /* CircularLock.m */,
+			);
+			name = Libs;
+			sourceTree = "<group>";
+		};
+		0D54961D1D17358C00DCD0FC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		0D54961E1D17359B00DCD0FC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0D5495D81D17318B00DCD0FC /* Main.storyboard */,
+				0D5495E01D17318B00DCD0FC /* LaunchScreen.storyboard */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,10 +306,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0D5495D71D17318B00DCD0FC /* ViewController.m in Sources */,
+				0D5496151D17354A00DCD0FC /* HistoryTableViewCell.m in Sources */,
 				0D5495D41D17318B00DCD0FC /* AppDelegate.m in Sources */,
 				0D5495D11D17318B00DCD0FC /* main.m in Sources */,
+				0D5496181D17354A00DCD0FC /* UnlockViewController.m in Sources */,
+				0D5496171D17354A00DCD0FC /* PermissionsViewController.m in Sources */,
+				0D54961C1D17357C00DCD0FC /* CircularLock.m in Sources */,
 				0D5495DD1D17318B00DCD0FC /* CloudUnlock.xcdatamodeld in Sources */,
+				0D5496161D17354A00DCD0FC /* HistoryViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
