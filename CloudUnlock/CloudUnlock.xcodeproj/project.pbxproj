@@ -15,6 +15,16 @@
 		0D5495DF1D17318B00DCD0FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D5495DE1D17318B00DCD0FC /* Assets.xcassets */; };
 		0D5495E21D17318B00DCD0FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D5495E01D17318B00DCD0FC /* LaunchScreen.storyboard */; };
 		0D5495ED1D17318B00DCD0FC /* CloudUnlockTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D5495EC1D17318B00DCD0FC /* CloudUnlockTests.m */; };
+		0D5496021D17327500DCD0FC /* background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0D5495F91D17327500DCD0FC /* background.jpg */; };
+		0D5496031D17327500DCD0FC /* background1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0D5495FA1D17327500DCD0FC /* background1.jpg */; };
+		0D5496041D17327500DCD0FC /* clay_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D5495FB1D17327500DCD0FC /* clay_logo.png */; };
+		0D5496051D17327500DCD0FC /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D5495FC1D17327500DCD0FC /* Icon.png */; };
+		0D5496061D17327500DCD0FC /* locked@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D5495FD1D17327500DCD0FC /* locked@2x.png */; };
+		0D5496071D17327500DCD0FC /* lockedTransparent@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D5495FE1D17327500DCD0FC /* lockedTransparent@2x.png */; };
+		0D5496081D17327500DCD0FC /* my-clay-art-work.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0D5495FF1D17327500DCD0FC /* my-clay-art-work.jpg */; };
+		0D5496091D17327500DCD0FC /* slide-to-unlock.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D5496001D17327500DCD0FC /* slide-to-unlock.png */; };
+		0D54960A1D17327500DCD0FC /* unlocked@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D5496011D17327500DCD0FC /* unlocked@2x.png */; };
+		0D54960C1D17331400DCD0FC /* Private-Cloud.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D54960B1D17331400DCD0FC /* Private-Cloud.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +52,16 @@
 		0D5495E81D17318B00DCD0FC /* CloudUnlockTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CloudUnlockTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D5495EC1D17318B00DCD0FC /* CloudUnlockTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CloudUnlockTests.m; sourceTree = "<group>"; };
 		0D5495EE1D17318B00DCD0FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0D5495F91D17327500DCD0FC /* background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = background.jpg; path = Resources/background.jpg; sourceTree = "<group>"; };
+		0D5495FA1D17327500DCD0FC /* background1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = background1.jpg; path = Resources/background1.jpg; sourceTree = "<group>"; };
+		0D5495FB1D17327500DCD0FC /* clay_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = clay_logo.png; path = Resources/clay_logo.png; sourceTree = "<group>"; };
+		0D5495FC1D17327500DCD0FC /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon.png; path = Resources/Icon.png; sourceTree = "<group>"; };
+		0D5495FD1D17327500DCD0FC /* locked@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "locked@2x.png"; path = "Resources/locked@2x.png"; sourceTree = "<group>"; };
+		0D5495FE1D17327500DCD0FC /* lockedTransparent@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "lockedTransparent@2x.png"; path = "Resources/lockedTransparent@2x.png"; sourceTree = "<group>"; };
+		0D5495FF1D17327500DCD0FC /* my-clay-art-work.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "my-clay-art-work.jpg"; path = "Resources/my-clay-art-work.jpg"; sourceTree = "<group>"; };
+		0D5496001D17327500DCD0FC /* slide-to-unlock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "slide-to-unlock.png"; path = "Resources/slide-to-unlock.png"; sourceTree = "<group>"; };
+		0D5496011D17327500DCD0FC /* unlocked@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "unlocked@2x.png"; path = "Resources/unlocked@2x.png"; sourceTree = "<group>"; };
+		0D54960B1D17331400DCD0FC /* Private-Cloud.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Private-Cloud.png"; path = "Resources/Private-Cloud.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,10 +108,8 @@
 				0D5495D51D17318B00DCD0FC /* ViewController.h */,
 				0D5495D61D17318B00DCD0FC /* ViewController.m */,
 				0D5495D81D17318B00DCD0FC /* Main.storyboard */,
-				0D5495DE1D17318B00DCD0FC /* Assets.xcassets */,
 				0D5495E01D17318B00DCD0FC /* LaunchScreen.storyboard */,
-				0D5495E31D17318B00DCD0FC /* Info.plist */,
-				0D5495DB1D17318B00DCD0FC /* CloudUnlock.xcdatamodeld */,
+				0D5495F81D17322C00DCD0FC /* Resources */,
 				0D5495CF1D17318B00DCD0FC /* Supporting Files */,
 			);
 			path = CloudUnlock;
@@ -100,6 +118,8 @@
 		0D5495CF1D17318B00DCD0FC /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				0D5495E31D17318B00DCD0FC /* Info.plist */,
+				0D5495DB1D17318B00DCD0FC /* CloudUnlock.xcdatamodeld */,
 				0D5495D01D17318B00DCD0FC /* main.m */,
 			);
 			name = "Supporting Files";
@@ -112,6 +132,24 @@
 				0D5495EE1D17318B00DCD0FC /* Info.plist */,
 			);
 			path = CloudUnlockTests;
+			sourceTree = "<group>";
+		};
+		0D5495F81D17322C00DCD0FC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0D54960B1D17331400DCD0FC /* Private-Cloud.png */,
+				0D5495F91D17327500DCD0FC /* background.jpg */,
+				0D5495FA1D17327500DCD0FC /* background1.jpg */,
+				0D5495FB1D17327500DCD0FC /* clay_logo.png */,
+				0D5495FC1D17327500DCD0FC /* Icon.png */,
+				0D5495FD1D17327500DCD0FC /* locked@2x.png */,
+				0D5495FE1D17327500DCD0FC /* lockedTransparent@2x.png */,
+				0D5495FF1D17327500DCD0FC /* my-clay-art-work.jpg */,
+				0D5496001D17327500DCD0FC /* slide-to-unlock.png */,
+				0D5496011D17327500DCD0FC /* unlocked@2x.png */,
+				0D5495DE1D17318B00DCD0FC /* Assets.xcassets */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -195,8 +233,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				0D5495E21D17318B00DCD0FC /* LaunchScreen.storyboard in Resources */,
+				0D5496081D17327500DCD0FC /* my-clay-art-work.jpg in Resources */,
+				0D5496021D17327500DCD0FC /* background.jpg in Resources */,
+				0D5496071D17327500DCD0FC /* lockedTransparent@2x.png in Resources */,
 				0D5495DF1D17318B00DCD0FC /* Assets.xcassets in Resources */,
+				0D54960A1D17327500DCD0FC /* unlocked@2x.png in Resources */,
+				0D54960C1D17331400DCD0FC /* Private-Cloud.png in Resources */,
+				0D5496031D17327500DCD0FC /* background1.jpg in Resources */,
+				0D5496061D17327500DCD0FC /* locked@2x.png in Resources */,
 				0D5495DA1D17318B00DCD0FC /* Main.storyboard in Resources */,
+				0D5496051D17327500DCD0FC /* Icon.png in Resources */,
+				0D5496091D17327500DCD0FC /* slide-to-unlock.png in Resources */,
+				0D5496041D17327500DCD0FC /* clay_logo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
