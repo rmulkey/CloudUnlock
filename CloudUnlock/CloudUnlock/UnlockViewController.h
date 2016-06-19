@@ -7,14 +7,20 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <CoreData/CoreData.h>
+
 
 @interface UnlockViewController : UIViewController
 
-@property (nonatomic, strong) NSMutableArray *event;
+@property (strong) NSManagedObject *eventHistory;
+//@property (strong) NSManagedObjectContext *context;
+
+
+@property (nonatomic, strong) NSMutableArray *events;
 
 @property (nonatomic, strong) NSString *username;
 @property (nonatomic, strong) NSDate *eventDate;
-@property (nonatomic, assign) BOOL isAccessDenied;
+@property (nonatomic, strong) NSString *status;
 
 @end
 

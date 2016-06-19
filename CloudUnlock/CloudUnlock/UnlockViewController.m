@@ -50,8 +50,8 @@
     [alertController addAction:defaultAction];
     [self presentViewController:alertController animated:YES completion:nil];
     
-    self.username = @"test";
-    self.isAccessDenied = YES;
+    self.username = @"test_username";
+    self.status = @"test_status";
     self.eventDate = [NSDate date];
     
     [self logUnlockEventToHistory];
@@ -60,17 +60,27 @@
 
 - (void) logUnlockEventToHistory {
     
-    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    NSManagedObjectContext *context = [self managedObjectContext];
+
+    NSManagedObject *newEvent = [NSEntityDescription insertNewObjectForEntityForName:@"UnlockEvent" inManagedObjectContext:context];
     
-    [defaults setObject:self.username forKey:@"username"];
-    [defaults setObject:self.eventDate forKey:@"date"];
-    [defaults setInteger:self.isAccessDenied forKey:@"access"];
+    [newEvent setValue:self.username forKey:@"username"];
+    [newEvent setValue:self.eventDate forKey:@"date"];
+    [newEvent setValue:self.status forKey:@"status"];
     
-    [defaults synchronize];
-    
-    NSLog(@"Defaults: %@", [defaults objectForKey:@"username"]);
+    NSLog(@"Event %@", newEvent);
 
 }
+
+- (NSManagedObjectContext *)managedObjectContext {
+    NSManagedObjectContext *context = nil;
+    id delegate = [[UIApplication sharedApplication] delegate];
+    if ([delegate performSelector:@selector(managedObjectContext)]) {
+        context = [delegate managedObjectContext];
+    }
+    return context;
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
