@@ -13,7 +13,7 @@
 @interface UnlockEvent : NSManagedObject
 
 @property (nonatomic, strong) NSString *username;
-@property (nonatomic, strong) NSDate *eventDate;
+@property (nonatomic, strong) NSString *eventDate;
 @property (nonatomic, strong) NSString *status;
 
 @end

@@ -18,26 +18,35 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    CircularLock *circularLock = [[CircularLock alloc] initWithCenter:self.view.center
-                                                    radius:80
-                                                  duration:2.0
-                                               strokeWidth:15
-                                                 ringColor:[UIColor greenColor]
-                                               strokeColor:[UIColor whiteColor]
-                                               lockedImage:[UIImage imageNamed:@"lockedTransparent.png"]
-                                             unlockedImage:[UIImage imageNamed:@"unlocked.png"]
-                                                  isLocked:YES
-                                         didlockedCallback:^{
-                                             NSLog(@"locked");
-                                         }
-                                       didUnlockedCallback:^{
-                                           NSLog(@"unlocked");
-                                           [self verifyPermissions];
-                                       }];
+    self.appDel = (AppDelegate*)[UIApplication sharedApplication].delegate;
     
-    [self.view addSubview:circularLock];
+    [self createCircularLock];
 
 }
+
+- (void) createCircularLock {
+    
+    CircularLock *circularLock = [[CircularLock alloc] initWithCenter:self.view.center
+                                                               radius:80
+                                                             duration:2.0
+                                                          strokeWidth:15
+                                                            ringColor:[UIColor greenColor]
+                                                          strokeColor:[UIColor whiteColor]
+                                                          lockedImage:[UIImage imageNamed:@"lockedTransparent.png"]
+                                                        unlockedImage:[UIImage imageNamed:@"unlocked.png"]
+                                                             isLocked:YES
+                                                    didlockedCallback:^{
+                                                        NSLog(@"locked");
+                                                    }
+                                                  didUnlockedCallback:^{
+                                                      NSLog(@"unlocked");
+                                                      [self verifyPermissions];
+                                                  }];
+    
+    [self.view addSubview:circularLock];
+    
+}
+
 - (void) verifyPermissions {
     
     UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"Access Denied"
@@ -52,7 +61,7 @@
     
     self.username = @"test_username";
     self.status = @"test_status";
-    self.eventDate = [NSDate date];
+    self.eventDate = @"test_date";
     
     [self logUnlockEventToHistory];
 
@@ -60,13 +69,19 @@
 
 - (void) logUnlockEventToHistory {
     
-    NSManagedObjectContext *context = [self managedObjectContext];
+    NSManagedObjectContext *managedObjectContext = [self managedObjectContext];
+    NSManagedObject *newEvent = [NSEntityDescription insertNewObjectForEntityForName:@"UnlockEvent" inManagedObjectContext:managedObjectContext];
 
-    NSManagedObject *newEvent = [NSEntityDescription insertNewObjectForEntityForName:@"UnlockEvent" inManagedObjectContext:context];
     
     [newEvent setValue:self.username forKey:@"username"];
-    [newEvent setValue:self.eventDate forKey:@"date"];
+    [newEvent setValue:self.eventDate forKey:@"eventDate"];
     [newEvent setValue:self.status forKey:@"status"];
+    
+    // Save the context
+    NSError *error = nil;
+    if (![managedObjectContext save:&error]) {
+        NSLog(@"Save Failed! %@ %@", error, [error localizedDescription]);
+    }
     
     NSLog(@"Event %@", newEvent);
 

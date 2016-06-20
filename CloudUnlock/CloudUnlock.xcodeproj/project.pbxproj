@@ -30,7 +30,7 @@
 		0D54961C1D17357C00DCD0FC /* CircularLock.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D54961B1D17357C00DCD0FC /* CircularLock.m */; };
 		0D5496211D174EC300DCD0FC /* UnlockEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D5496201D174EC300DCD0FC /* UnlockEvent.m */; };
 		0D5496231D17597C00DCD0FC /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D5496221D17597C00DCD0FC /* CoreData.framework */; };
-		0D5496261D17736600DCD0FC /* CloudUnlock.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0D5496241D17736600DCD0FC /* CloudUnlock.xcdatamodeld */; };
+		0D5496291D17B7D400DCD0FC /* CloudUnlock.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0D5496271D17B7D400DCD0FC /* CloudUnlock.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,7 +78,7 @@
 		0D54961F1D174EC300DCD0FC /* UnlockEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnlockEvent.h; sourceTree = "<group>"; };
 		0D5496201D174EC300DCD0FC /* UnlockEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnlockEvent.m; sourceTree = "<group>"; };
 		0D5496221D17597C00DCD0FC /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		0D5496251D17736600DCD0FC /* CloudUnlock.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CloudUnlock.xcdatamodel; sourceTree = "<group>"; };
+		0D5496281D17B7D400DCD0FC /* CloudUnlock.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CloudUnlock.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,9 +144,9 @@
 			children = (
 				0D5495D21D17318B00DCD0FC /* AppDelegate.h */,
 				0D5495D31D17318B00DCD0FC /* AppDelegate.m */,
-				0D5496241D17736600DCD0FC /* CloudUnlock.xcdatamodeld */,
 				0D5495E31D17318B00DCD0FC /* Info.plist */,
 				0D5495D01D17318B00DCD0FC /* main.m */,
+				0D5496271D17B7D400DCD0FC /* CloudUnlock.xcdatamodeld */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -321,7 +321,7 @@
 				0D5496181D17354A00DCD0FC /* UnlockViewController.m in Sources */,
 				0D5496171D17354A00DCD0FC /* PermissionsViewController.m in Sources */,
 				0D54961C1D17357C00DCD0FC /* CircularLock.m in Sources */,
-				0D5496261D17736600DCD0FC /* CloudUnlock.xcdatamodeld in Sources */,
+				0D5496291D17B7D400DCD0FC /* CloudUnlock.xcdatamodeld in Sources */,
 				0D5496211D174EC300DCD0FC /* UnlockEvent.m in Sources */,
 				0D5496161D17354A00DCD0FC /* HistoryViewController.m in Sources */,
 			);
@@ -522,12 +522,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		0D5496241D17736600DCD0FC /* CloudUnlock.xcdatamodeld */ = {
+		0D5496271D17B7D400DCD0FC /* CloudUnlock.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				0D5496251D17736600DCD0FC /* CloudUnlock.xcdatamodel */,
+				0D5496281D17B7D400DCD0FC /* CloudUnlock.xcdatamodel */,
 			);
-			currentVersion = 0D5496251D17736600DCD0FC /* CloudUnlock.xcdatamodel */;
+			currentVersion = 0D5496281D17B7D400DCD0FC /* CloudUnlock.xcdatamodel */;
 			path = CloudUnlock.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
