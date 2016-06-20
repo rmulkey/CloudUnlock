@@ -1,4 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9525" systemVersion="14F1808" minimumToolsVersion="Xcode 7.0">
-    <elements/>
+    <entity name="UnlockEvent" representedClassName="UnlockEvent" syncable="YES">
+        <attribute name="eventDate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="status" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="username" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="UnlockEvent" positionX="-36" positionY="9" width="128" height="90"/>
+    </elements>
 </model>

@@ -31,6 +31,7 @@
 		0D5496211D174EC300DCD0FC /* UnlockEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D5496201D174EC300DCD0FC /* UnlockEvent.m */; };
 		0D5496231D17597C00DCD0FC /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D5496221D17597C00DCD0FC /* CoreData.framework */; };
 		0D5496291D17B7D400DCD0FC /* CloudUnlock.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0D5496271D17B7D400DCD0FC /* CloudUnlock.xcdatamodeld */; };
+		0D54962C1D17D0B500DCD0FC /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D54962B1D17D0B500DCD0FC /* LoginViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +80,8 @@
 		0D5496201D174EC300DCD0FC /* UnlockEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnlockEvent.m; sourceTree = "<group>"; };
 		0D5496221D17597C00DCD0FC /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		0D5496281D17B7D400DCD0FC /* CloudUnlock.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CloudUnlock.xcdatamodel; sourceTree = "<group>"; };
+		0D54962A1D17D0B500DCD0FC /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		0D54962B1D17D0B500DCD0FC /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +127,8 @@
 			children = (
 				0D54961E1D17359B00DCD0FC /* Views */,
 				0D54961D1D17358C00DCD0FC /* Model */,
+				0D54962A1D17D0B500DCD0FC /* LoginViewController.h */,
+				0D54962B1D17D0B500DCD0FC /* LoginViewController.m */,
 				0D54960D1D17354A00DCD0FC /* HistoryTableViewCell.h */,
 				0D54960E1D17354A00DCD0FC /* HistoryTableViewCell.m */,
 				0D54960F1D17354A00DCD0FC /* HistoryViewController.h */,
@@ -319,6 +324,7 @@
 				0D5495D41D17318B00DCD0FC /* AppDelegate.m in Sources */,
 				0D5495D11D17318B00DCD0FC /* main.m in Sources */,
 				0D5496181D17354A00DCD0FC /* UnlockViewController.m in Sources */,
+				0D54962C1D17D0B500DCD0FC /* LoginViewController.m in Sources */,
 				0D5496171D17354A00DCD0FC /* PermissionsViewController.m in Sources */,
 				0D54961C1D17357C00DCD0FC /* CircularLock.m in Sources */,
 				0D5496291D17B7D400DCD0FC /* CloudUnlock.xcdatamodeld in Sources */,

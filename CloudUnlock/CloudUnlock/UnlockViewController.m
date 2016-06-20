@@ -71,20 +71,30 @@
     
     NSManagedObjectContext *managedObjectContext = [self managedObjectContext];
     NSManagedObject *newEvent = [NSEntityDescription insertNewObjectForEntityForName:@"UnlockEvent" inManagedObjectContext:managedObjectContext];
-
     
-    [newEvent setValue:self.username forKey:@"username"];
-    [newEvent setValue:self.eventDate forKey:@"eventDate"];
+    [newEvent setValue:[[NSUserDefaults standardUserDefaults] stringForKey:@"username"] forKey:@"username"];
+    [newEvent setValue:[self getStringFromDate] forKey:@"eventDate"];
     [newEvent setValue:self.status forKey:@"status"];
     
     // Save the context
     NSError *error = nil;
     if (![managedObjectContext save:&error]) {
         NSLog(@"Save Failed! %@ %@", error, [error localizedDescription]);
+    } else {
+        NSLog(@"Saved!");
     }
     
     NSLog(@"Event %@", newEvent);
 
+}
+
+-(NSString *)getStringFromDate {
+    
+    NSString *stringDate = [NSDateFormatter localizedStringFromDate:[NSDate date]
+                                                          dateStyle:NSDateFormatterShortStyle
+                                                          timeStyle:NSDateFormatterShortStyle];
+    
+    return stringDate;
 }
 
 - (NSManagedObjectContext *)managedObjectContext {
