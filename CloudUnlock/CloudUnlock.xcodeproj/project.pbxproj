@@ -10,7 +10,6 @@
 		0D5495D11D17318B00DCD0FC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D5495D01D17318B00DCD0FC /* main.m */; };
 		0D5495D41D17318B00DCD0FC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D5495D31D17318B00DCD0FC /* AppDelegate.m */; };
 		0D5495DA1D17318B00DCD0FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D5495D81D17318B00DCD0FC /* Main.storyboard */; };
-		0D5495DD1D17318B00DCD0FC /* CloudUnlock.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0D5495DB1D17318B00DCD0FC /* CloudUnlock.xcdatamodeld */; };
 		0D5495DF1D17318B00DCD0FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D5495DE1D17318B00DCD0FC /* Assets.xcassets */; };
 		0D5495E21D17318B00DCD0FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D5495E01D17318B00DCD0FC /* LaunchScreen.storyboard */; };
 		0D5495ED1D17318B00DCD0FC /* CloudUnlockTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D5495EC1D17318B00DCD0FC /* CloudUnlockTests.m */; };
@@ -29,6 +28,9 @@
 		0D5496171D17354A00DCD0FC /* PermissionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D5496121D17354A00DCD0FC /* PermissionsViewController.m */; };
 		0D5496181D17354A00DCD0FC /* UnlockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D5496141D17354A00DCD0FC /* UnlockViewController.m */; };
 		0D54961C1D17357C00DCD0FC /* CircularLock.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D54961B1D17357C00DCD0FC /* CircularLock.m */; };
+		0D5496211D174EC300DCD0FC /* UnlockEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D5496201D174EC300DCD0FC /* UnlockEvent.m */; };
+		0D5496231D17597C00DCD0FC /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D5496221D17597C00DCD0FC /* CoreData.framework */; };
+		0D5496261D17736600DCD0FC /* CloudUnlock.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0D5496241D17736600DCD0FC /* CloudUnlock.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,7 +49,6 @@
 		0D5495D21D17318B00DCD0FC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0D5495D31D17318B00DCD0FC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		0D5495D91D17318B00DCD0FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		0D5495DC1D17318B00DCD0FC /* CloudUnlock.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CloudUnlock.xcdatamodel; sourceTree = "<group>"; };
 		0D5495DE1D17318B00DCD0FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0D5495E11D17318B00DCD0FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0D5495E31D17318B00DCD0FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -74,6 +75,10 @@
 		0D5496141D17354A00DCD0FC /* UnlockViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnlockViewController.m; sourceTree = "<group>"; };
 		0D54961A1D17357C00DCD0FC /* CircularLock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CircularLock.h; path = Libs/CircularLock.h; sourceTree = "<group>"; };
 		0D54961B1D17357C00DCD0FC /* CircularLock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CircularLock.m; path = Libs/CircularLock.m; sourceTree = "<group>"; };
+		0D54961F1D174EC300DCD0FC /* UnlockEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnlockEvent.h; sourceTree = "<group>"; };
+		0D5496201D174EC300DCD0FC /* UnlockEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnlockEvent.m; sourceTree = "<group>"; };
+		0D5496221D17597C00DCD0FC /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		0D5496251D17736600DCD0FC /* CloudUnlock.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CloudUnlock.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D5496231D17597C00DCD0FC /* CoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,6 +103,7 @@
 		0D5495C31D17318B00DCD0FC = {
 			isa = PBXGroup;
 			children = (
+				0D5496221D17597C00DCD0FC /* CoreData.framework */,
 				0D5495CE1D17318B00DCD0FC /* CloudUnlock */,
 				0D5495EB1D17318B00DCD0FC /* CloudUnlockTests */,
 				0D5495CD1D17318B00DCD0FC /* Products */,
@@ -137,8 +144,8 @@
 			children = (
 				0D5495D21D17318B00DCD0FC /* AppDelegate.h */,
 				0D5495D31D17318B00DCD0FC /* AppDelegate.m */,
+				0D5496241D17736600DCD0FC /* CloudUnlock.xcdatamodeld */,
 				0D5495E31D17318B00DCD0FC /* Info.plist */,
-				0D5495DB1D17318B00DCD0FC /* CloudUnlock.xcdatamodeld */,
 				0D5495D01D17318B00DCD0FC /* main.m */,
 			);
 			name = "Supporting Files";
@@ -183,6 +190,8 @@
 		0D54961D1D17358C00DCD0FC /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				0D54961F1D174EC300DCD0FC /* UnlockEvent.h */,
+				0D5496201D174EC300DCD0FC /* UnlockEvent.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -312,7 +321,8 @@
 				0D5496181D17354A00DCD0FC /* UnlockViewController.m in Sources */,
 				0D5496171D17354A00DCD0FC /* PermissionsViewController.m in Sources */,
 				0D54961C1D17357C00DCD0FC /* CircularLock.m in Sources */,
-				0D5495DD1D17318B00DCD0FC /* CloudUnlock.xcdatamodeld in Sources */,
+				0D5496261D17736600DCD0FC /* CloudUnlock.xcdatamodeld in Sources */,
+				0D5496211D174EC300DCD0FC /* UnlockEvent.m in Sources */,
 				0D5496161D17354A00DCD0FC /* HistoryViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -512,12 +522,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		0D5495DB1D17318B00DCD0FC /* CloudUnlock.xcdatamodeld */ = {
+		0D5496241D17736600DCD0FC /* CloudUnlock.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				0D5495DC1D17318B00DCD0FC /* CloudUnlock.xcdatamodel */,
+				0D5496251D17736600DCD0FC /* CloudUnlock.xcdatamodel */,
 			);
-			currentVersion = 0D5495DC1D17318B00DCD0FC /* CloudUnlock.xcdatamodel */;
+			currentVersion = 0D5496251D17736600DCD0FC /* CloudUnlock.xcdatamodel */;
 			path = CloudUnlock.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
