@@ -200,6 +200,11 @@
                                                 <constraint firstItem="SaX-RY-OqJ" firstAttribute="baseline" secondItem="EM3-qU-7fu" secondAttribute="baseline" id="sJj-et-efp"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="dateLabel" destination="7B6-Pg-pLD" id="U7q-TF-cvr"/>
+                                            <outlet property="nameLabel" destination="q6k-RJ-16W" id="ZBF-gf-EAc"/>
+                                            <outlet property="statusLabel" destination="EM3-qU-7fu" id="XS3-9r-NWm"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
