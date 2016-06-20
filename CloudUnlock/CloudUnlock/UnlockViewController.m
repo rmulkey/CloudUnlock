@@ -49,6 +49,10 @@
 
 - (void) verifyPermissions {
     
+    if ([[[NSUserDefaults standardUserDefaults] objectForKey:@"status"] isEqualToString:@"Success"]) {
+        
+    } else {
+    
     UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"Access Denied"
                                                                              message:@"You don't have permission to unlock this door. Contact the Admin"
                                                                       preferredStyle:UIAlertControllerStyleAlert];
@@ -58,10 +62,7 @@
     
     [alertController addAction:defaultAction];
     [self presentViewController:alertController animated:YES completion:nil];
-    
-    self.username = @"test_username";
-    self.status = @"test_status";
-    self.eventDate = @"test_date";
+    }
     
     [self logUnlockEventToHistory];
 
@@ -74,9 +75,8 @@
     
     [newEvent setValue:[[NSUserDefaults standardUserDefaults] stringForKey:@"username"] forKey:@"username"];
     [newEvent setValue:[self getStringFromDate] forKey:@"eventDate"];
-    [newEvent setValue:self.status forKey:@"status"];
+    [newEvent setValue:[[NSUserDefaults standardUserDefaults] stringForKey:@"status"] forKey:@"status"];
     
-    // Save the context
     NSError *error = nil;
     if (![managedObjectContext save:&error]) {
         NSLog(@"Save Failed! %@ %@", error, [error localizedDescription]);

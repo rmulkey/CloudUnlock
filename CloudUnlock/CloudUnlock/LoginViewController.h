@@ -14,5 +14,7 @@
 @property (weak, nonatomic) IBOutlet UITextField *passwordTextField;
 @property (weak, nonatomic) IBOutlet UIButton *submitButton;
 
+@property (strong, nonatomic) NSDictionary *users;
+
 
 @end

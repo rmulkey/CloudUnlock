@@ -10,5 +10,7 @@
 
 @interface PermissionsViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UIButton *logoutButton;
+
 @end
 

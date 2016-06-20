@@ -16,7 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    [self createUsersList];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -24,13 +24,34 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void) createUsersList {
+    
+     self.users = @{@"rodrigo" : @"rodrigo", @"babet": @"babet", @"rick": @"rick", @"admin": @"admin"};
+                                                                    
+ 
+}
 
 - (IBAction)btnSubmitTapped:(id)sender {
     
+    for (NSString* key in [self.users allKeys]) {
+        if (([key isEqualToString:self.usernameTextField.text]) && ([key isEqualToString:self.passwordTextField.text])) {
+        
+            [[NSUserDefaults standardUserDefaults] setValue:@"Success" forKey:@"status"];
+            
+            [self performSegueWithIdentifier:@"tabBarRootView" sender:self];
+
+            break;
+            
+        } else {
+            
+            [[NSUserDefaults standardUserDefaults] setValue:@"Access Denied" forKey:@"status"];
+        }
+        
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     [defaults setValue:self.usernameTextField.text forKey:@"username"];
     [defaults synchronize];
-    
+        
+    }
 }
 
 @end

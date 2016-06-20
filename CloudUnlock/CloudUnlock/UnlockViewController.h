@@ -19,8 +19,6 @@
 
 @property (nonatomic, strong) NSMutableArray *events;
 
-@property (nonatomic, strong) NSString *username;
-@property (nonatomic, strong) NSString *eventDate;
 @property (nonatomic, strong) NSString *status;
 
 @property (nonatomic) AppDelegate *appDel;
